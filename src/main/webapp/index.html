@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang=\"pt-br\">
+<head>
+    <meta charset=\"UTF-8\">
+    <meta name=\"\viewport\\" content=\"\width=device-width, initial-scale=1.0\\">
+    <title>Usuários Cadastrados</title>
+
+    <style>
+        h1 {
+            font-family: arial;
+            font-size: 30pt;
+            text-align: center;
+            color:black;
+
+        }
+        #estrutura{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dp img {
+            width:24px;
+            height: 24px;
+            margin: 5px;
+        }
+        .dc img {
+            width:16px;
+            height: 16px;
+            margin: 5px;
+        }
+        .us {
+            background-color: aqua;
+            padding: 10px;
+            width: 250px;
+            border-radius: 10px;
+            transition: ease 0.5s;
+        }
+        .us:hover{
+            background-color: blue;
+            box-shadow: 0px 0px 5px black;
+            margin-left: 10;
+            transform: scale(1.2);
+        }
+        h2 {
+            font-family: arial;
+            font-size: 12pt;
+            margin-right: 20px;
+        }
+        .dp {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .dc div{
+            font-family: arial;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            width: 200px;
+
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>Usuários Cadastrados</h1>
+    <div id="estrutura"></div>
+
+    <div class="us">
+        <div class="dp">
+            <img src="icondepessoa.png" alt="">
+            <h2>Samantha Pires</h2>
+            <a href="atualizar.html">
+                <img src="lapis.png" alt="">
+        </a>
+    </div>
+
+    <div class="dc">
+        <div><img src="telefone.png" alt=""> (11) 99865-5568 <br></div>
+        <div><img src="email.png" alt="">samantha@gmail.com.br</div>
+    </div>
+
+
+</body>
+</html>

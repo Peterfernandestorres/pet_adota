@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Livraria</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        /* Bordas,Cores e Fontes da Pagina */
+        header {
+            background-color: rgb(12, 12, 53);
+            color: white;
+            font-family: verdana;
+        }
+        /* Não sei ainda */
+        #areausuario {
+            height: 100px;
+            border-bottom: 1px solid cyan;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        /* Botão da Barra de Pesquisa */
+        #areapesquisa {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            border-bottom: 1px yellow;
+        }
+        /* Simbolo de GPS do Google Maps */
+        #locallocalizacao {
+            display: flex;
+            height: 100px;
+            border-bottom: 1px purple;
+        }
+        /* Imagem do Simbolo de GPS do Google Maps */
+        #locallocalizacao img {
+            width: 16px;
+            height: 16px;
+        }
+        /* Icone de Usuario */
+        #usuario {
+            display: flex;
+            height: 100px;
+            color: silver !important;
+        }
+        /* Imagem do Icone de Usuario */
+        #usuario img {
+            width: 20px;
+            height: 20px;
+        }
+        /* barra de Pesquisa */
+        #areapesquisa {
+            padding: 20px;
+            color: black !important;
+            margin-left: auto;
+        }
+        /* Imagem da barra de Pesquisa */
+        #areapesquisa img{
+            width: 250px;
+            height: 100px;
+        }
+        /* Carrinho de Compras */
+        #carrinho {
+            background-color: white;
+            padding: 10px;
+            color: black !important;
+            margin-left: auto;
+        }
+        /* Imagem do Carrinho de Compras */
+        #carrinho img {
+            width: 30px;
+            height: 30px;
+            color: black !important;
+        }
+        form img{
+            width: 16px !important;
+            height: 16px !important;
+        }
+        form {
+            background-color: white;
+            padding: 10px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        input[type=text] {
+            width: 700px;
+            border: 0px;
+            padding: 10px;
+            outline: none;
+        }
+        input[type="submit"] {
+            background-color: gold;
+            color: white;
+            border: 0px;
+            font-size: 15px;
+        }
+        #areamenu {
+            padding: 15px;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #areamenu a:hover {
+            color:goldenrod
+        }
+        footer {
+            background-color: rgb(12, 12, 53);
+            color: white;
+            font-family: verdana;
+            padding: 40px;
+        }
+        #rodape h2 {
+            color: gold;
+        }
+        #rodape {
+            line-height: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #footer a{
+            color: silver;
+            text-decoration: none;
+        }
+        #contato img{
+            width: 18px;
+            height: 18px;
+        }
+        #generos a {
+            display: block;
+        }
+        #generos {
+            width: 450px;
+        }
+        #copy {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid slateblue;
+        }
+        #listalivros {
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .livro {
+            width: 30%;
+
+            border: 1px solid green;
+            padding: 10px;
+        }
+        .livro img {
+            width: 100%;
+        }
+        .livro h4{
+            font-family: verdana;
+            font-size: 14px;
+        }
+        .livros p{
+            color: red;
+            font-size: 15px;
+            font-family: verdana;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="areausuario">
+            <div id="locallocalizacao">
+                <img src="setinha.png" alt="">
+                localização da loja
+            </div>
+
+            <div id="usuario">
+                <img src="icon.png" alt="">
+                Logar / Cadastrar
+            </div>
+        </div>
+
+        <div id="areapesquisa">
+            <img src="logotipo-renovagraf.png" alt="">
+            <form action="ServiceSearch" method="get">
+                <img src="lupa.png" alt="">
+                <input type="text" placeholder="Pesquise se Livro Aqui">
+                <input type="submit" value="BUSCAR">
+            </form>
+
+            <div id="carrinho"><img src="carrinho.png" alt="">R$ 0,00</div>
+
+        </div>
+
+        <div id="areamenu">
+            <nav>
+                <a href="HOME">HOME</a>
+                <a href="#">ROMANCE</a>
+                <a href="#">AVENTURA</a>
+                <a href="#">TERROR</a>
+                <a href="#">FANTASIA</a>
+                <a href="#">SUSPENSE</a>
+                <a href="#">DRAMA</a>
+                <a href="#">AÇAO</a>
+            </nav>
+
+        </div>
+
+
+
+    </header>
+    <contend>
+        <div id="painel"><img src="p3rw.png" alt=""></div>
+        <h2>Nossos Produtos</h2>
+        <div id="listalivros">
+            <div class="livro">
+                <img src="comedia.jpg" alt="">
+                <h4>Midset</h4>
+                <p class="preco"> 39.90 </p>
+            </div>
+        </div>
+
+        <div class="livro">
+            <img src="comedia.jpg" alt="">
+            <h4>Midset</h4>
+            <p class="preco"> 70.33 </p>
+        </div>
+
+        <div class="livro">
+            <img src="comedia.jpg" alt="">
+            <h4>Midset</h4>
+            <p class="preco"> 50.55 </p>
+        </div>
+
+        <div class="livro">
+            <img src="comedia.jpg" alt="">
+            <h4>Midset</h4>
+            <p class="preco"> 12.90 </p>
+        </div>
+
+        
+    </contend>
+    
+    <footer>
+        <div id="rodape">
+            <div id="contato">
+                <h2>Nossos Contatos</h2>
+                <a href="https://wa.me/5511995689958"><img src="whatzap.png" alt="(11) 98565-9867"></a>
+                (11) 98565-9867 | 92478-3564 <br>
+                av. Doutor Paulo Roberto,78 - jardim nova - são paulo - SP <br>
+                
+            </div>
+            <div id="generos">
+                <h2>Generos</h2>
+                <nav>
+                    <a href="HOME">HOME</a>
+                    <a href="#">ROMANCE</a>
+                    <a href="#">AVENTURA</a>
+                    <a href="#">TERROR</a>
+                    <a href="#">FANTASIA</a>
+                    <a href="#">SUSPENSE</a>
+                    <a href="#">DRAMA</a>
+                    <a href="#">AÇAO</a>
+                </nav>
+            </div>
+                
+        </div>
+
+        <div id="copy">
+            ©Copyright-todos os direitos reservados | design by <a href="https://github.com/Peterfernandestorres">Peter Fernandes Torres</a></div>
+
+    </footer>
+    
+</body>
+</html>

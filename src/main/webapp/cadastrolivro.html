@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Livraria</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        /* Bordas,Cores e Fontes da Pagina */
+        header {
+            background-color: rgb(12, 12, 53);
+            color: white;
+            font-family: verdana;
+        }
+        /* Primeira borda de cima da tela com a linha azul */
+        #areausuario {
+            height: 100px;
+            border-bottom: 1px solid cyan;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        /* Botão da Barra de Pesquisa */
+        #areapesquisa {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            border-bottom: 1px yellow;
+        }
+        /* Simbolo de GPS do Google Maps */
+        #locallocalizacao {
+            display: flex;
+            height: 100px;
+            border-bottom: 1px purple;
+        }
+        /* Imagem do Simbolo de GPS do Google Maps */
+        #locallocalizacao img {
+            width: 16px;
+            height: 16px;
+        }
+        /* Icone de Usuario */
+        #usuario {
+            display: flex;
+            height: 100px;
+            color: silver !important;
+        }
+        /* Imagem do Icone de Usuario */
+        #usuario img {
+            width: 20px;
+            height: 20px;
+        }
+        /* barra de Pesquisa */
+        #areapesquisa {
+            padding: 20px;
+            color: black !important;
+            margin-left: auto;
+        }
+        /* Imagem da barra de Pesquisa */
+        #areapesquisa img{
+            width: 250px;
+            height: 100px;
+        }
+        /* Carrinho de Compras */
+        #carrinho {
+            background-color: white;
+            padding: 10px;
+            color: black !important;
+            margin-left: auto;
+        }
+        /* Imagem do Carrinho de Compras */
+        #carrinho img {
+            width: 30px;
+            height: 30px;
+            color: black !important;
+        }
+        /* Forma da Imagem do whatzapp */
+        form img{
+            width: 16px !important;
+            height: 16px !important;
+        }
+        form {
+            background-color: white;
+            padding: 10px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        input[type=text] {
+            width: 700px;
+            border: 0px;
+            padding: 10px;
+            outline: none;
+        }
+        input[type="submit"] {
+            background-color: gold;
+            color: white;
+            border: 0px;
+            font-size: 15px;
+        }
+        #areamenu {
+            padding: 15px;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #areamenu a:hover {
+            color:goldenrod
+        }
+        footer {
+            background-color: rgb(12, 12, 53);
+            color: white;
+            font-family: verdana;
+            padding: 40px;
+        }
+        #rodape h2 {
+            color: gold;
+        }
+        #rodape {
+            line-height: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #footer a{
+            color: silver;
+            text-decoration: none;
+        }
+        #contato img{
+            width: 18px;
+            height: 18px;
+        }
+        #generos a {
+            display: block;
+        }
+        #generos {
+            width: 450px;
+        }
+        #copy {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid slateblue;
+        }
+        content form {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        content form label {
+            font-family: verdana;
+            font-size: 12pt;
+            font-weight: bold;
+            display: block;
+        }
+        content form input {
+            width: 100%;
+            padding: 10px;
+            border-bottom: 1px solid cyan;
+            margin-bottom: 10px;
+        }
+        content form select {
+            width: 50%;
+            padding: 10px;
+            border-bottom: 1px solid rgb(129, 51, 51);
+            margin-bottom: 10px;
+        }
+        content form textarea {
+            width: 100%;
+            height:250px;
+            font-size: 10px;
+            resize: none;
+            margin-bottom: 10px;
+            border: 1 px solid grey;
+            font-family: verdana;
+        }
+        content form input [type=submit] {
+            width: 120px !important;
+            margin-left:40% ;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="areausuario">
+            <div id="locallocalizacao">
+                <img src="setinha.png" alt="">
+                localização da loja
+            </div>
+
+            <div id="usuario">
+                <img src="icon.png" alt="">
+                Logar / Cadastrar
+            </div>
+        </div>
+
+        <div id="areapesquisa">
+            <img src="logotipo-renovagraf.png" alt="">
+            <form action="ServiceSearch" method="get">
+                <img src="lupa.png" alt="">
+                <input type="text" placeholder="Pesquise se Livro Aqui">
+                <input type="submit" value="BUSCAR">
+            </form>
+
+            <div id="carrinho"><img src="carrinho.png" alt="">R$ 0,00</div>
+
+        </div>
+
+        <div id="areamenu">
+            <nav>
+                <a href="HOME">HOME</a>
+                <a href="#">ROMANCE</a>
+                <a href="#">AVENTURA</a>
+                <a href="#">TERROR</a>
+                <a href="#">FANTASIA</a>
+                <a href="#">SUSPENSE</a>
+                <a href="#">DRAMA</a>
+                <a href="#">AÇAO</a>
+            </nav>
+
+        </div>
+
+
+
+    </header>
+    <content>
+
+        <div id="painel"><img src="persona.png" alt=""></div>
+        <h2>Cadastro de Novos Livros</h2>
+
+        <form action="ServiceLivro" method="post">
+            <label>Titulo do Livro</label>
+            <input type="text" name="txtTitulo" required>
+
+            <label>Genero</label>
+            <select name="cboGenero" id="">
+
+                <option value="">Selecione um Genero</option>
+                <option value="ROMANCE">ROMANCE</option>
+                <option value="AVENTURA">AVENTURA</option>
+                <option value="TERROR">TERROR</option>
+                <option value="FANTASIA">FANTASIA</option>
+                <option value="SUSPENSE">SUSPENSE</option>
+                <option value="DRAMA">DRAMA</option>
+                <option value="AÇÃO">AÇAO</option>
+
+                <label>Sinopse</label>
+                <textarea name="txtSinopse"></textarea>
+
+                <label>Autor</label>
+                <input type="text" name="txtAutor" required>
+
+                <label>Preço</label>
+                <input type="text" name="txtPreco" required>
+
+                <label>Capa do Livro</label>
+                <input type="text" name="txtCapa" required>
+        
+                <input type="submit" value="Cadastrar">
+
+                
+        </form>
+    </content>
+    
+    <footer>
+        <div id="rodape">
+            <div id="contato">
+                <h2>Nossos Contatos</h2>
+                <a href="https://wa.me/5511995689958"><img src="whatzap.png" alt="(11) 98565-9867"></a>
+                (11) 98565-9867 | 92478-3564 <br>
+                av. Doutor Paulo Roberto,78 - jardim nova - são paulo - SP <br>
+                
+            </div>
+            <div id="generos">
+                <h2>Generos</h2>
+                <nav>
+                    <a href="HOME">HOME</a>
+                    <a href="#">ROMANCE</a>
+                    <a href="#">AVENTURA</a>
+                    <a href="#">TERROR</a>
+                    <a href="#">FANTASIA</a>
+                    <a href="#">SUSPENSE</a>
+                    <a href="#">DRAMA</a>
+                    <a href="#">AÇAO</a>
+                </nav>
+            </div>
+                
+        </div>
+
+        <div id="copy">
+            ©Copyright-todos os direitos reservados | design by <a href="https://github.com/Peterfernandestorres">Peter Fernandes Torres</a></div>
+
+    </footer>
+    
+</body>
+</html>

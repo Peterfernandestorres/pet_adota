@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        /* css-> cascade style sheet(cascata estilo folha) */
+        body {
+            text-align: center;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        form {
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        label {
+            font-family: verdana;
+            font-size: 11pt;
+            font-weight: bold;
+            display: block;
+            text-align: left;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        input[type=submit] {
+            background-color: cyan;
+            color: black;
+            width: 498px;
+            font-family: verdana;
+            font-size: 12pt;
+            box-shadow: 0px 0px 2px black;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+        }
+        a {
+            font-family: verdana;
+            text-decoration: none;
+            color: blue;
+            text-transform: uppercase;
+            font-size: 8pt;
+            font-weight: bold;
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <img src="icondepessoa.png" alt="">
+    <form action="ServiceLogin" method="post">
+        <label>Usuario</label>
+        <input type="text" name="txtusuario" required>
+
+        <label>Senha</label>
+        <input type="password" name="txtsenha" required>
+
+        <input type="submit" value="Logar">
+        <a href="cadastrousuario.html"> Cadastrar </a>
+
+
+    </form>
+</body>
+</html>
